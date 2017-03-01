@@ -10,5 +10,4 @@ RUN apk update && apk add ca-certificates wget && update-ca-certificates \
     && rm -r etcd*
 
 EXPOSE 2379 2380
-
-
+ENTRYPOINT ["/usr/bin/etcd"]
